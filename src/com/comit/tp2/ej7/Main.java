@@ -1,4 +1,4 @@
-package com.company;
+package com.comit.tp2.ej7;
 
 public class Main {
 
