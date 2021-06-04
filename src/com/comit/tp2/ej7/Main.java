@@ -21,6 +21,7 @@ si la edad del solicitante es mayor a los 32 años, deberá tener como mínimo
 6 años de experiencia; si la experiencia es menor a los 6 años y mayor a 3
 años, se lo tomará en forma condicional. En cualquier otro caso se lo
 rechazará.
+
 TP 2 - Estructuras de control de decisión 3
 Realizar un programa que permita decidir a partir de los datos del aspirante si
 fue seleccionado definitivamente, en forma condicional, o rechazado. Imprimir
@@ -40,7 +41,22 @@ un mensaje que indique lo ocurrido.
         int estimatedSalary = scanner.nextInt();
 
         if (yearsOld >=18 && yearsOld <= 35){
-
+            if(experience < 3 && estimatedSalary > 50000){
+                System.out.println("Rechazado");
+            }
+            if(yearsOld>32){
+                if(experience > 6){
+                    System.out.println("Seleccionado");
+                }else if(experience < 6 && experience > 3){
+                    System.out.println("Condicional");
+                }else{
+                    System.out.println("Rechazado");
+                }
+            }else{
+                System.out.println("Seleccionado");
+            }
+        }else{
+            System.out.println("Rechazado");
         }
     }
 }
