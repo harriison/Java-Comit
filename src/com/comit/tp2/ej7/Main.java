@@ -31,9 +31,16 @@ un mensaje que indique lo ocurrido.
         System.out.println("Para la solicitud del trabajo ingrese los siguientes datos: ");
         System.out.println("Cuantos años tienes?");
         Scanner scanner = new Scanner(System.in);
-        int years = scanner.nextInt();
+        int yearsOld = scanner.nextInt();
 
         System.out.println("Experiencia?");
+        int experience = scanner.nextInt();
 
+        System.out.println("Salario estimado?");
+        int estimatedSalary = scanner.nextInt();
+
+        if (yearsOld >=18 && yearsOld <= 35){
+
+        }
     }
 }
